@@ -38,3 +38,7 @@ The goal is to create a convenient way for both students and teachers to demonst
 - Sprint retrospective - Sunday 7 PM
 
 Results for the retrospective will be documented in wiki.
+
+## Sprint Evaluations
+
+[Sprint Evaluations](https://docs.google.com/spreadsheets/d/e/2PACX-1vTXIhfQzTkLutk3Wp2zWwAcCXQe7GZCZGWMZHp4nMPAgInjsxWohwH5hxwd4N9iyATx-H-QBAiTGWlj/pubchart?oid=1269973863&format=image)
