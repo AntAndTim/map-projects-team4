@@ -28,8 +28,14 @@ public class QuestionController {
     }
 
     @GetMapping("{id}")
-    public QuestionDTO getQuestionById(@PathVariable("id") Long id) {
-        return questionService.getQuestionById(id);
+    public ResponseEntity<QuestionDTO> getQuestionById(@PathVariable("id") Long id) {
+        QuestionDTO questionDTOFromRepository = questionService.getQuestionById(id);
+
+        if (questionDTOFromRepository == null) {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(null);
+        }
+
+        return ResponseEntity.ok(questionDTOFromRepository);
     }
 
     @PutMapping
