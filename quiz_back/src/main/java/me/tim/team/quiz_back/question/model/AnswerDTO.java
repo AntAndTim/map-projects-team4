@@ -3,13 +3,10 @@ package me.tim.team.quiz_back.question.model;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.List;
-
 @Data
 @NoArgsConstructor
-public class QuestionDTO {
+public class AnswerDTO {
     private Long id;
     private String text;
-    private List<AnswerDTO> answers;
-
+    private boolean correct;
 }

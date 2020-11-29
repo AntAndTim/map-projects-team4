@@ -19,7 +19,7 @@ public class QuestionController {
 
     @PostMapping
     public void createQuestion(@RequestBody QuestionDTO questionDTO) {
-        questionService.create(questionDTO);
+        questionService.createQuestion(questionDTO);
     }
 
     @GetMapping

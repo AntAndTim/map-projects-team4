@@ -7,7 +7,6 @@ import me.tim.team.quiz_back.question.repository.QuestionRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Service
@@ -21,7 +20,7 @@ public class QuestionService {
         this.mapper = mapper;
     }
 
-    public void create(QuestionDTO questionDTO) {
+    public void createQuestion(QuestionDTO questionDTO) {
         repository.save(mapper.map(questionDTO));
     }
 
