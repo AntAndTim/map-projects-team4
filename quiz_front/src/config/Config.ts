@@ -1,0 +1,1 @@
+export const baseUrl = (path: string) => `http://localhost:3001/${path}`
