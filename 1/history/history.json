@@ -1,0 +1,22 @@
+{
+  "3c1f22a6c062e531e251516b0704bacc" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "a571f112b320961b",
+      "reportUrl" : "https://AntAndTim.github.io/map-projects-team4/1//#testresult/a571f112b320961b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1607297960160,
+        "stop" : 1607297960328,
+        "duration" : 168
+      }
+    } ]
+  }
+}
