@@ -1,0 +1,26 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: akhileshns/heroku-deploy@v3.6.8 # This is the action
+        with:
+          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+          heroku_app_name: "map-projects-team4-back" #Must be unique in Heroku
+          heroku_email: "anton.timchenko@outlook.com"
+        env:
+          HD_APP_BASE: "quiz_back"
+      - uses: akhileshns/heroku-deploy@v3.6.8 # This is the action
+        with:
+          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+          heroku_app_name: "map-projects-team4" #Must be unique in Heroku
+          heroku_email: "anton.timchenko@outlook.com"
+        env:
+          HD_APP_BASE: "quiz_front"
