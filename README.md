@@ -16,7 +16,7 @@ The goal is to create a convenient way for both students and teachers to demonst
 ## Project management
 
 - GitHub - code hosting, review tool.
-- GitHub Projects - backlog, current milestones and issue tracking.
+- ~GitHub Projects - backlog, current milestones and issue tracking.~ Jira, same purposes, link: https://map-projects-team4.atlassian.net/
 - Telegram - communications.
 - Planning poker - estimation.
 
