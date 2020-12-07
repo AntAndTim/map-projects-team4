@@ -1,0 +1,22 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "children" : [ {
+    "name" : "me.tim.team.quiz_back.QuizBackApplicationTests",
+    "children" : [ {
+      "name" : "contextLoads",
+      "uid" : "5bde45f4cfadf855",
+      "parentUid" : "5d5dc051bff964b02d018fe7aa0a4ead",
+      "status" : "passed",
+      "time" : {
+        "start" : 1607297960160,
+        "stop" : 1607297960328,
+        "duration" : 168
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "me.tim.team.quiz_back.QuizBackApplicationTests"
+  } ],
+  "name" : "packages"
+}
