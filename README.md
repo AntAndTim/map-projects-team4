@@ -47,6 +47,8 @@ Our backend can be found at https://map-projects-team4-back.herokuapp.com/ and i
 
 [Here](https://antandtim.me/map-projects-team4) you can find reports about our tests
 
+Additional docks for deploy can be found in subfolders `quiz_front`, `quiz_back`
+
 ## Sprint Evaluations
 
 ![Sprint Evaluations](https://docs.google.com/spreadsheets/d/e/2PACX-1vTXIhfQzTkLutk3Wp2zWwAcCXQe7GZCZGWMZHp4nMPAgInjsxWohwH5hxwd4N9iyATx-H-QBAiTGWlj/pubchart?oid=234185997&format=image)
