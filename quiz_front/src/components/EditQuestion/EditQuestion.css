@@ -1,0 +1,16 @@
+.ant-input.EditQuestion-Text {
+    width: 60%;
+}
+
+.EditQuestion-Answer {
+    margin-bottom: 16px;
+}
+
+.EditQuestion-Answer .ant-input {
+    width: 50%;
+    margin-right: 16px;
+}
+
+.ant-checkbox.EditQuestion-AnswerCheckbox {
+    margin-right: 16px;
+}
