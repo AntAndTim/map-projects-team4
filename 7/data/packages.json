@@ -1,0 +1,95 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "children" : [ {
+    "name" : "me.tim.team.quiz_back",
+    "children" : [ {
+      "name" : "question.service.QuestionServiceTest",
+      "children" : [ {
+        "name" : "getQuestions",
+        "uid" : "16faaa9b50eb39a8",
+        "parentUid" : "7b94916b7143ef3971b31182c043c5c3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607351455290,
+          "stop" : 1607351455940,
+          "duration" : 650
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "updateQuestion",
+        "uid" : "abf14ab38f27483e",
+        "parentUid" : "7b94916b7143ef3971b31182c043c5c3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607351456006,
+          "stop" : 1607351456011,
+          "duration" : 5
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "createQuestion",
+        "uid" : "5d810dae38fadf86",
+        "parentUid" : "7b94916b7143ef3971b31182c043c5c3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607351456015,
+          "stop" : 1607351456025,
+          "duration" : 10
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "deleteQuestion",
+        "uid" : "b7a750f1c553d875",
+        "parentUid" : "7b94916b7143ef3971b31182c043c5c3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607351456028,
+          "stop" : 1607351456034,
+          "duration" : 6
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "getQuestionById",
+        "uid" : "aaa2025b0753e7d8",
+        "parentUid" : "7b94916b7143ef3971b31182c043c5c3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607351456038,
+          "stop" : 1607351456055,
+          "duration" : 17
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "question.service.QuestionServiceTest"
+    }, {
+      "name" : "QuizBackApplicationTests",
+      "children" : [ {
+        "name" : "contextLoads",
+        "uid" : "d137b4c6141f8377",
+        "parentUid" : "5d5dc051bff964b02d018fe7aa0a4ead",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607351456073,
+          "stop" : 1607351456078,
+          "duration" : 5
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "5d5dc051bff964b02d018fe7aa0a4ead"
+    } ],
+    "uid" : "me.tim.team.quiz_back"
+  } ],
+  "name" : "packages"
+}
