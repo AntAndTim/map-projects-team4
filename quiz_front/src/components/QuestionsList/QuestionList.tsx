@@ -1,7 +1,7 @@
 import axios, {AxiosResponse} from "axios";
 import {baseUrl} from "../../config/Config";
 import React, {useEffect, useState} from "react";
-import {Button, Empty, List} from "antd";
+import {Empty, List, Skeleton} from "antd";
 
 import './QuestionList.css';
 import {Link} from "react-router-dom";
@@ -15,12 +15,21 @@ interface QuestionListProps {
 
 export const QuestionList: React.FC<QuestionListProps> = ({editMode}) => {
     const [questions, setQuestions] = useState<QuestionModel[]>([])
+    const [loading, setLoading] = useState<boolean>(false)
+
     useEffect(() => {
+        setLoading(true);
+
         axios.get(baseUrl("question"))
             .then(function (response: AxiosResponse<QuestionModel[]>) {
                 setQuestions(response.data);
+                setLoading(false);
             });
     }, [])
+
+    if (loading) {
+        return <Skeleton active/>
+    }
 
     if (!questions || !questions.length) {
         return <Empty />;

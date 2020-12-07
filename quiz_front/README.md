@@ -38,5 +38,6 @@ Also you can create new one
 You can create question
 ![questions](./readmeImages/questionCreation.png)
 
-You can change question text, answers text and add answers
+You can change question text, 
+answers text and add/delete answers
 ![questions](./readmeImages/questionEdition.png)
