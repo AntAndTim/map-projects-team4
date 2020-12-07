@@ -1,0 +1,8 @@
+.ant-list-item.QuestionsList-Item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ant-list.QuestionsList {
+    margin-bottom: 16px;
+}

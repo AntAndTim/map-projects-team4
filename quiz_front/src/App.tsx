@@ -1,19 +1,21 @@
 import React from 'react';
-import {QuestionList} from "./Question/QuestionList";
-import {PageHeader, Row} from "antd";
+import {PageHeader} from "antd";
+import {Main} from "./components/Main/Main";
+
+import './App.css'
 
 function App() {
     return (
         <div>
             <PageHeader
                 className="site-page-header"
-                onBack={() => null}
-                title="Questions"
+                title="Quiz TeamTim"
                 subTitle="Here you can find questions for the quiz"
+                onBack={() => document.location.href = '/'}
             />
-            <Row gutter={[16, 16]} justify="start">
-                <QuestionList/>
-            </Row>
+            <div className="Page-Content">
+                <Main/>
+            </div>
         </div>
     );
 }

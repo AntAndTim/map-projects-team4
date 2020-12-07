@@ -1,0 +1,27 @@
+.ant-card.Answer {
+    /*background-color: var(--check-box-color) !important;*/
+    /*border-color: var(--check-box-color) !important;*/
+
+    width: 100%;
+    margin-bottom: 16px;
+    margin-right: 16px;
+
+    font-size: 20px;
+    text-align: center;
+}
+
+.ant-card.Answer_selected, .Answer_selected.ant-card-hoverable:hover {
+    border: 2px solid #1890ff;
+}
+
+.ant-card.Answer_green, .Answer_green.ant-card-hoverable:hover {
+    border: 2px solid green;
+}
+
+.ant-card.Answer_yellow, .Answer_yellow.ant-card-hoverable:hover {
+    border: 2px solid yellow;
+}
+
+.ant-card.Answer_red, .Answer_red.ant-card-hoverable:hover {
+    border: 2px solid red;
+}

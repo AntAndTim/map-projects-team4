@@ -1,1 +1,1 @@
-export const baseUrl = (path: string) => `http://localhost:3001/${path}`
+export const baseUrl = (path: string) => `https://map-projects-team4-back.herokuapp.com/${path}`
