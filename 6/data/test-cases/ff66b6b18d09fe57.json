@@ -1,0 +1,57 @@
+{
+  "uid" : "ff66b6b18d09fe57",
+  "name" : "createQuestion()",
+  "fullName" : "me.tim.team.quiz_back.question.service.QuestionServiceTest.createQuestion",
+  "historyId" : "bcc7a66d7734fb1c43019a32ece11c10",
+  "time" : {
+    "start" : 1607351456015,
+    "stop" : 1607351456025,
+    "duration" : 10
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "hqmsksbldb02.tcsbank.ru"
+  }, {
+    "name" : "thread",
+    "value" : "61561@hqmsksbldb02.tcsbank.ru.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "me.tim.team.quiz_back.question.service.QuestionServiceTest"
+  }, {
+    "name" : "testClass",
+    "value" : "me.tim.team.quiz_back.question.service.QuestionServiceTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "createQuestion"
+  }, {
+    "name" : "suite",
+    "value" : "me.tim.team.quiz_back.question.service.QuestionServiceTest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "ff66b6b18d09fe57.json",
+  "parameterValues" : [ ]
+}
