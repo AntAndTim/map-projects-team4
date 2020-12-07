@@ -39,6 +39,14 @@ The goal is to create a convenient way for both students and teachers to demonst
 
 Results for the retrospective will be documented in wiki.
 
+## Deployment
+
+You can find our UI at https://map-projects-team4.herokuapp.com/
+
+Our backend can be found at https://map-projects-team4-back.herokuapp.com/ and its documentation at https://map-projects-team4-back.herokuapp.com/swagger-ui.html
+
+[Here](https://antandtim.me/map-projects-team4) you can find reports about our tests
+
 ## Sprint Evaluations
 
 ![Sprint Evaluations](https://docs.google.com/spreadsheets/d/e/2PACX-1vTXIhfQzTkLutk3Wp2zWwAcCXQe7GZCZGWMZHp4nMPAgInjsxWohwH5hxwd4N9iyATx-H-QBAiTGWlj/pubchart?oid=234185997&format=image)
