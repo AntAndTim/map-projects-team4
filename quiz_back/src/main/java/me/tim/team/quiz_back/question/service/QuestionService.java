@@ -1,5 +1,6 @@
 package me.tim.team.quiz_back.question.service;
 
+import javax.transaction.Transactional;
 import me.tim.team.quiz_back.question.mapper.QuestionMapper;
 import me.tim.team.quiz_back.question.model.Question;
 import me.tim.team.quiz_back.question.model.QuestionDTO;
@@ -24,10 +25,12 @@ public class QuestionService {
         repository.save(mapper.map(questionDTO));
     }
 
+    @Transactional
     public QuestionDTO getQuestionById(Long id) {
         return mapper.map(repository.findById(id).orElse(null));
     }
 
+    @Transactional
     public List<QuestionDTO> getQuestions() {
         return repository.findAll().stream().map(mapper::map).collect(Collectors.toList());
     }
