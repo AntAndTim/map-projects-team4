@@ -9,10 +9,11 @@ import axios, {AxiosResponse} from "axios";
 import {baseUrl} from "../../config/Config";
 
 interface EditQuestionProps {
-    question?: QuestionModel
+    question?: QuestionModel;
+    onSuccess: () => void;
 }
 
-export const EditQuestion: React.FC<EditQuestionProps> = ({question}) => {
+export const EditQuestion: React.FC<EditQuestionProps> = ({question, onSuccess}) => {
     const [questionText, setQuestionText] = useState<string>(question?.text || '');
     const [answers, setAnswers] = useState<Partial<AnswerModel>[]>(question?.answers || []);
 
@@ -32,14 +33,14 @@ export const EditQuestion: React.FC<EditQuestionProps> = ({question}) => {
         if (question?.id) {
             axios.put(baseUrl(`question`), {text: questionText, answers, id: question.id})
                 .then(function (response: AxiosResponse) {
-                    console.log(response)
+                    onSuccess();
                 })
                 .catch(error => message.error(error.message))
             ;
         } else {
             axios.post(baseUrl(`question`), {text: questionText, answers})
                 .then(function (response: AxiosResponse) {
-                    console.log(response)
+                    onSuccess();
                 })
                 .catch(error => message.error(error.message))
             ;
@@ -78,6 +79,13 @@ export const EditQuestion: React.FC<EditQuestionProps> = ({question}) => {
             })
         }
 
+    const answerDeletionHandler = (index: number) =>
+        () => {
+            setAnswers(answers => {
+                return answers.filter((answer, answerIndex) => index !== answerIndex)
+            })
+        }
+
     return (
         <div>
             <Input
@@ -103,6 +111,7 @@ export const EditQuestion: React.FC<EditQuestionProps> = ({question}) => {
                                     onChange={answerCorrectnessChangeHandler(index)}
                                 >Correct</Checkbox>
                             </span>
+                            <Button onClick={answerDeletionHandler(index)}>Delete</Button>
                         </div>
                     )
                 })
