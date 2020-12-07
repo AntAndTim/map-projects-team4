@@ -1,0 +1,10 @@
+[ {
+  "name" : "GitHub Actions",
+  "type" : "github",
+  "url" : "https://AntAndTim.github.io/map-projects-team4",
+  "buildOrder" : 8,
+  "buildName" : "GitHub Actions Run #406200736",
+  "buildUrl" : "https://github.com/AntAndTim/map-projects-team4/actions/runs/406200736",
+  "reportName" : "Allure Report with history",
+  "reportUrl" : "https://AntAndTim.github.io/map-projects-team4/8/"
+} ]
