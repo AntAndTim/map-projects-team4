@@ -1,7 +1,23 @@
+## Requirements
+
+node - 14.15.1,
+npm - 6.1.0,
+jsdoc - 3.5.5,
+
 ## How to launch locally
 
 1. Install dependencies `npm install`
 2. Launch app `npm start`
+
+## Documentation
+
+Open locally `docs/index.html`
+
+## Tests
+
+For coverage view 
+- locally run `npm run test`
+- result in `coverage/lcov-report/index.html`
 
 ## How to use
 

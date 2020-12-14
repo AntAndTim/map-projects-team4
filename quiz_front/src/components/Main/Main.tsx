@@ -6,6 +6,13 @@ import {QuestionMode, QuestionPageContainer} from "../QuestionPage/QuestionPage.
 
 type RouteProps = { match: { params: { id: string } } };
 
+/**
+ * Main content component with path resolving
+ *
+ * @component
+ * @example
+ * return <Main/>
+ */
 export const Main = () => {
     return (
         <main>

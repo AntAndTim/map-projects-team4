@@ -9,6 +9,14 @@ interface QuestionListContainerProps {
     editMode: boolean;
 }
 
+/**
+ * Component for displaying question list with edit or view mode.
+ * After edit button or view button you go to the view or edit url
+ *
+ * @component
+ * @example
+ * return <QuestionListContainer editMode={false}/>
+ */
 export const QuestionListContainer: React.FC<QuestionListContainerProps> = ({editMode}) => {
     const [questions, setQuestions] = useState<QuestionModel[]>([])
     const [loading, setLoading] = useState<boolean>(false)

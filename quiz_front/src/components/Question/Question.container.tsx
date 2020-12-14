@@ -12,6 +12,20 @@ interface QuestionContainerProps {
 export type AnswerClickHandler = (id: number) => void;
 export type AnswerQuestion = () => void;
 
+/**
+ * Component for displaying question in quiz mode
+ *
+ * @component
+ * @example
+ * const answers = [{id: 100, text: 'apple', correct: true}, {id: 200, text: 'banana', correct: false}]
+ * const question = {id: 121, text: 'Which fruit is green?', answers}
+ *
+ * return (
+ *   <QuestionContainer
+ *      question={question}
+ *   />
+ * )
+ */
 export const QuestionContainer: React.FC<QuestionContainerProps> = ({question}) => {
     const [answers, setAnswers] = useState<AnswerModel[]>(question.answers || []);
     const [haveAnswered, setHaveAnswered] = useState(false)
