@@ -13,6 +13,8 @@ interface QuestionProps {
     onAnswerClick: AnswerClickHandler;
     haveAnswered: boolean;
     answerQuestion: AnswerQuestion;
+    onNext?: () => void;
+    onBack?: () => void;
 }
 
 export const Question: React.FC<QuestionProps> = props => {
@@ -38,12 +40,15 @@ export const Question: React.FC<QuestionProps> = props => {
                     ))
                 }
             </div>
-            <Button
-                type="primary"
-                onClick={answerQuestion}
-            >
-                Answer
-            </Button>
+            {
+                !haveAnswered &&
+                <Button
+                    type="primary"
+                    onClick={answerQuestion}
+                >
+                    Answer
+                </Button>
+            }
         </div>
     )
 }

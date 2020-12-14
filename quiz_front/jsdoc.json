@@ -1,0 +1,27 @@
+{
+  "tags": {
+    "allowUnknownTags": ["optional", "component"]
+  },
+  "source": {
+    "include": ["src/components"],
+    "includePattern": "\\.(jsx|js|ts|tsx)$"
+  },
+  "plugins": [
+    "plugins/markdown",
+    "category",
+    "component",
+    "typescript",
+    "node_modules/better-docs/typescript",
+    "node_modules/better-docs/component"
+  ],
+  "opts": {
+    "encoding": "utf8",
+    "destination": "docs/",
+    "recurse": true
+  },
+  "templates": {
+    "better-docs": {
+      "name": "TeamTim Documentation"
+    }
+  }
+}
