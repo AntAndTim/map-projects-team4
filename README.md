@@ -57,6 +57,20 @@ Additional docks for deploy can be found in subfolders `quiz_front`, `quiz_back`
 
 [Here](https://map-projects-team4.atlassian.net/secure/RapidBoard.jspa?rapidView=1&projectKey=QUIZ&view=reporting&chart=sprintRetrospective&sprint=2&atlOrigin=eyJpIjoiYzYwNDAyM2VkODI2NGFmMDkzNGU3N2UyYTAwYTA3MjciLCJwIjoiaiJ9) you can find sprint reports.
 
+## Developer documentation
+
+Documentation can be found in subfolders `quiz_front`, `quiz_back` containing docs for frontend and backend.
+
+### Branching and commit policies
+
+To correctly integrate with Jira, developer should strictly follow the following workflow:
+1. Create a task in Jira in case it is not created
+1. Create a branch from main, which should be named in form feature||bug||docs||build||hotfix/JIRA-TASK-ID e.g. feature/QUIZ-29
+1. Start adding commits to the branch following the [conventional commits guide](https://www.conventionalcommits.org/) with a slight change of that you should put jira keu inside brackets e.g. docs(QUIZ-29): added some docs
+1. Finally create a pull request as following feature||bug||docs||build||hotfix(JIRA-TASK-ID): summary e.g. docs(QUIZ-29): added docs
+
+If you follow these rules, Jira will show your commits, branches and PRs.
+
 ## Sprint Evaluations
 
 ![Sprint Evaluations](https://docs.google.com/spreadsheets/d/e/2PACX-1vTXIhfQzTkLutk3Wp2zWwAcCXQe7GZCZGWMZHp4nMPAgInjsxWohwH5hxwd4N9iyATx-H-QBAiTGWlj/pubchart?oid=234185997&format=image)
