@@ -1,0 +1,131 @@
+{
+  "uid" : "d4e983bf93796eab",
+  "name" : "deleteQuestion()",
+  "fullName" : "me.tim.team.quiz_back.question.service.QuestionServiceTest.deleteQuestion",
+  "historyId" : "1cccce61214d75928c6f3817d25811f2",
+  "time" : {
+    "start" : 1607351456028,
+    "stop" : 1607351456034,
+    "duration" : 6
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "hqmsksbldb02.tcsbank.ru"
+  }, {
+    "name" : "thread",
+    "value" : "61561@hqmsksbldb02.tcsbank.ru.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "me.tim.team.quiz_back.question.service.QuestionServiceTest"
+  }, {
+    "name" : "testClass",
+    "value" : "me.tim.team.quiz_back.question.service.QuestionServiceTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "deleteQuestion"
+  }, {
+    "name" : "suite",
+    "value" : "me.tim.team.quiz_back.question.service.QuestionServiceTest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 8,
+        "unknown" : 0,
+        "total" : 8
+      },
+      "items" : [ {
+        "uid" : "c518c1274b06fde7",
+        "reportUrl" : "https://AntAndTim.github.io/map-projects-team4/17//#testresult/c518c1274b06fde7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607351456028,
+          "stop" : 1607351456034,
+          "duration" : 6
+        }
+      }, {
+        "uid" : "fecc0ba023281518",
+        "reportUrl" : "https://AntAndTim.github.io/map-projects-team4/16//#testresult/fecc0ba023281518",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607351456028,
+          "stop" : 1607351456034,
+          "duration" : 6
+        }
+      }, {
+        "uid" : "e72c0ee0c900dcb1",
+        "reportUrl" : "https://AntAndTim.github.io/map-projects-team4/15//#testresult/e72c0ee0c900dcb1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607351456028,
+          "stop" : 1607351456034,
+          "duration" : 6
+        }
+      }, {
+        "uid" : "af088fb3c2d59086",
+        "reportUrl" : "https://AntAndTim.github.io/map-projects-team4/14//#testresult/af088fb3c2d59086",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607351456028,
+          "stop" : 1607351456034,
+          "duration" : 6
+        }
+      }, {
+        "uid" : "c7387f6556271937",
+        "reportUrl" : "https://AntAndTim.github.io/map-projects-team4/13//#testresult/c7387f6556271937",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607351456028,
+          "stop" : 1607351456034,
+          "duration" : 6
+        }
+      }, {
+        "uid" : "212e4bb5be7139d",
+        "reportUrl" : "https://AntAndTim.github.io/map-projects-team4/12//#testresult/212e4bb5be7139d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607351456028,
+          "stop" : 1607351456034,
+          "duration" : 6
+        }
+      }, {
+        "uid" : "a834814debf34e53",
+        "reportUrl" : "https://AntAndTim.github.io/map-projects-team4/11//#testresult/a834814debf34e53",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607351456028,
+          "stop" : 1607351456034,
+          "duration" : 6
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "d4e983bf93796eab.json",
+  "parameterValues" : [ ]
+}
