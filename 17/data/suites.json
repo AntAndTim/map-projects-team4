@@ -1,0 +1,91 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "children" : [ {
+    "name" : "me.tim.team.quiz_back.question.service.QuestionServiceTest",
+    "children" : [ {
+      "name" : "getQuestions()",
+      "uid" : "edb75762de2486d5",
+      "parentUid" : "8d87b1e395f844d7f2f461783e488106",
+      "status" : "passed",
+      "time" : {
+        "start" : 1607351455290,
+        "stop" : 1607351455940,
+        "duration" : 650
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "updateQuestion()",
+      "uid" : "6f379a624c016c8e",
+      "parentUid" : "8d87b1e395f844d7f2f461783e488106",
+      "status" : "passed",
+      "time" : {
+        "start" : 1607351456006,
+        "stop" : 1607351456011,
+        "duration" : 5
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "createQuestion()",
+      "uid" : "a1c0647e3ac6b1f0",
+      "parentUid" : "8d87b1e395f844d7f2f461783e488106",
+      "status" : "passed",
+      "time" : {
+        "start" : 1607351456015,
+        "stop" : 1607351456025,
+        "duration" : 10
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "deleteQuestion()",
+      "uid" : "c518c1274b06fde7",
+      "parentUid" : "8d87b1e395f844d7f2f461783e488106",
+      "status" : "passed",
+      "time" : {
+        "start" : 1607351456028,
+        "stop" : 1607351456034,
+        "duration" : 6
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "getQuestionById()",
+      "uid" : "a316f73cd95edf6b",
+      "parentUid" : "8d87b1e395f844d7f2f461783e488106",
+      "status" : "passed",
+      "time" : {
+        "start" : 1607351456038,
+        "stop" : 1607351456055,
+        "duration" : 17
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "8d87b1e395f844d7f2f461783e488106"
+  }, {
+    "name" : "me.tim.team.quiz_back.QuizBackApplicationTests",
+    "children" : [ {
+      "name" : "contextLoads()",
+      "uid" : "14297dd54ff9ea22",
+      "parentUid" : "df8d3148ffb9ddb7549d5b482770af1c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1607351456073,
+        "stop" : 1607351456078,
+        "duration" : 5
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "df8d3148ffb9ddb7549d5b482770af1c"
+  } ],
+  "name" : "suites"
+}
