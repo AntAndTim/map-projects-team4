@@ -49,6 +49,14 @@ Our backend can be found at https://map-projects-team4-back.herokuapp.com/ and i
 
 Additional docks for deploy can be found in subfolders `quiz_front`, `quiz_back`
 
+## For stakeholders
+
+[Here](https://map-projects-team4.atlassian.net/secure/RapidBoard.jspa?rapidView=1&projectKey=QUIZ&atlOrigin=eyJpIjoiMThkMzE5YWZhYzRhNGU2NTgzNDM4MGM1MmY4ZDg1NDAiLCJwIjoiaiJ9) you can find our active sprint board.
+
+[Here](https://map-projects-team4.atlassian.net/secure/RapidBoard.jspa?projectKey=QUIZ&rapidView=1&view=planning.nodetail&atlOrigin=eyJpIjoiZmVkNmM3ODk3Mjg1NGY1MWJkMTZiYjEyOTgxNzk0ZDUiLCJwIjoiaiJ9) you can find our current backlog.
+
+[Here](https://map-projects-team4.atlassian.net/secure/RapidBoard.jspa?rapidView=1&projectKey=QUIZ&view=reporting&chart=sprintRetrospective&sprint=2&atlOrigin=eyJpIjoiYzYwNDAyM2VkODI2NGFmMDkzNGU3N2UyYTAwYTA3MjciLCJwIjoiaiJ9) you can find sprint reports.
+
 ## Sprint Evaluations
 
 ![Sprint Evaluations](https://docs.google.com/spreadsheets/d/e/2PACX-1vTXIhfQzTkLutk3Wp2zWwAcCXQe7GZCZGWMZHp4nMPAgInjsxWohwH5hxwd4N9iyATx-H-QBAiTGWlj/pubchart?oid=234185997&format=image)
