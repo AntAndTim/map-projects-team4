@@ -1,26 +1,32 @@
-package me.tim.team.quiz_back.question.model;
+package me.tim.team.quiz_back.session.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.hibernate.annotations.GenericGenerator;
 
-@Entity
 @Data
-@AllArgsConstructor
+@Entity
 @NoArgsConstructor
-public class Answer {
+@AllArgsConstructor
+public class SessionUser {
 
     @Id
-    @GeneratedValue(generator = "answerSequenceGenerator")
+    @GeneratedValue(generator = "sessionUserSequenceGenerator")
     @GenericGenerator(
-        name = "answerSequenceGenerator",
+        name = "sessionUserSequenceGenerator",
         strategy = "org.hibernate.id.enhanced.SequenceStyleGenerator"
     )
     private Long id;
-    private String text;
-    private boolean correct;
+
+    @ManyToOne
+    private Session session;
+
+    private String login;
+
+    private Long score;
 }
