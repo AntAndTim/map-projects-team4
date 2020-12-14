@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Question Should render component 1`] = `
+<div
+  class="Question"
+>
+  <h1
+    class="Question-Text"
+  >
+    QuestionText200
+  </h1>
+  <div
+    class="Question-Answers"
+  >
+    <div
+      class="ant-card ant-card-bordered ant-card-hoverable Answer"
+    >
+      <div
+        class="ant-card-body"
+      >
+        AnswerText1
+      </div>
+    </div>
+    <div
+      class="ant-card ant-card-bordered ant-card-hoverable Answer"
+    >
+      <div
+        class="ant-card-body"
+      >
+        AnswerText2
+      </div>
+    </div>
+    <div
+      class="ant-card ant-card-bordered ant-card-hoverable Answer"
+    >
+      <div
+        class="ant-card-body"
+      >
+        AnswerText3
+      </div>
+    </div>
+  </div>
+  <button
+    class="ant-btn ant-btn-primary"
+    type="button"
+  >
+    <span>
+      Answer
+    </span>
+  </button>
+</div>
+`;

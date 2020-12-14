@@ -1,0 +1,153 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EditQuestionContainer Should render component 1`] = `
+<div>
+  <input
+    class="ant-input EditQuestion-Text"
+    placeholder="QuestionContainer text"
+    type="text"
+    value="QuestionText100"
+  />
+  <div
+    class="ant-divider ant-divider-horizontal"
+    role="separator"
+  />
+  <div
+    class="EditQuestion-Answer"
+  >
+    <input
+      class="ant-input"
+      placeholder="Answer text"
+      type="text"
+      value="AnswerText1"
+    />
+    <span>
+      <label
+        class="ant-checkbox-wrapper EditQuestion-AnswerCheckbox"
+      >
+        <span
+          class="ant-checkbox"
+        >
+          <input
+            class="ant-checkbox-input"
+            type="checkbox"
+          />
+          <span
+            class="ant-checkbox-inner"
+          />
+        </span>
+        <span>
+          Correct
+        </span>
+      </label>
+    </span>
+    <button
+      class="ant-btn"
+      type="button"
+    >
+      <span>
+        Delete
+      </span>
+    </button>
+  </div>
+  <div
+    class="EditQuestion-Answer"
+  >
+    <input
+      class="ant-input"
+      placeholder="Answer text"
+      type="text"
+      value="AnswerText2"
+    />
+    <span>
+      <label
+        class="ant-checkbox-wrapper EditQuestion-AnswerCheckbox"
+      >
+        <span
+          class="ant-checkbox"
+        >
+          <input
+            class="ant-checkbox-input"
+            type="checkbox"
+          />
+          <span
+            class="ant-checkbox-inner"
+          />
+        </span>
+        <span>
+          Correct
+        </span>
+      </label>
+    </span>
+    <button
+      class="ant-btn"
+      type="button"
+    >
+      <span>
+        Delete
+      </span>
+    </button>
+  </div>
+  <div
+    class="EditQuestion-Answer"
+  >
+    <input
+      class="ant-input"
+      placeholder="Answer text"
+      type="text"
+      value="AnswerText3"
+    />
+    <span>
+      <label
+        class="ant-checkbox-wrapper ant-checkbox-wrapper-checked EditQuestion-AnswerCheckbox"
+      >
+        <span
+          class="ant-checkbox ant-checkbox-checked"
+        >
+          <input
+            checked=""
+            class="ant-checkbox-input"
+            type="checkbox"
+          />
+          <span
+            class="ant-checkbox-inner"
+          />
+        </span>
+        <span>
+          Correct
+        </span>
+      </label>
+    </span>
+    <button
+      class="ant-btn"
+      type="button"
+    >
+      <span>
+        Delete
+      </span>
+    </button>
+  </div>
+  <div
+    style="margin-bottom:16px"
+  >
+    <button
+      class="ant-btn"
+      type="button"
+    >
+      <span>
+        Add answer
+      </span>
+    </button>
+  </div>
+  <div>
+    <button
+      class="ant-btn"
+      type="button"
+    >
+      <span>
+        Submit
+      </span>
+    </button>
+  </div>
+</div>
+`;

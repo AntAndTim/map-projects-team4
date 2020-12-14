@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App Should render shallow component 1`] = `
+<div>
+  <PageHeader
+    className="App-Header"
+    onBack={[Function]}
+    subTitle="Here you can find questions for the quiz"
+    title="Quiz TeamTim"
+  />
+  <div
+    className="Page-Content"
+  >
+    <Main />
+  </div>
+</div>
+`;
