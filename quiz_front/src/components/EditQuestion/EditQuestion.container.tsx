@@ -8,7 +8,7 @@ import axios, {AxiosResponse} from "axios";
 import {baseUrl} from "../../config/Config";
 import {EditQuestion} from "./EditQuestion";
 
-interface EditQuestionProps {
+interface EditQuestionContainerProps {
     question?: QuestionModel;
     onSuccess: () => void;
 }
@@ -20,7 +20,7 @@ export type DeleteAnswerHandler = (index: number) => () => void;
 export type CreateAnswerHandler = () => void;
 export type SubmitQuestionHandler = () => void;
 
-export const EditQuestionContainer: React.FC<EditQuestionProps> = ({question, onSuccess}) => {
+export const EditQuestionContainer: React.FC<EditQuestionContainerProps> = ({question, onSuccess}) => {
     const [questionText, setQuestionText] = useState<string>(question?.text || '');
     const [answers, setAnswers] = useState<Partial<AnswerModel>[]>(question?.answers || []);
 

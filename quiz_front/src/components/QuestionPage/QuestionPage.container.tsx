@@ -10,12 +10,12 @@ export enum QuestionMode {
     new = 'new',
 }
 
-interface QuestionPageProps {
+interface QuestionPageContainerProps {
     id?: number;
     mode: QuestionMode;
 }
 
-export const QuestionPageContainer: React.FC<QuestionPageProps> = ({id, mode}) => {
+export const QuestionPageContainer: React.FC<QuestionPageContainerProps> = ({id, mode}) => {
     const [question, setQuestion] = useState<QuestionModel | undefined>(undefined);
     const [success, setSuccess] = useState(false);
 
