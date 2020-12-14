@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: EditQuestion/EditQuestion.container.tsx</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: EditQuestion/EditQuestion.container.tsx</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import {QuestionModel} from "../../models/QuestionModel";
+import React, {ChangeEvent, useCallback, useState} from "react";
+import {message} from "antd";
+import {AnswerModel} from "../../models/AnswerModel";
+
+import {CheckboxChangeEvent} from "antd/es/checkbox";
+import axios, {AxiosResponse} from "axios";
+import {baseUrl} from "../../config/Config";
+import {EditQuestion} from "./EditQuestion";
+
+interface EditQuestionContainerProps {
+    question?: QuestionModel;
+    onSuccess: () => void;
+}
+
+export type QuestionTextChaneHandler = (event: ChangeEvent&lt;HTMLInputElement>) => void;
+export type AnswerTextChangeHandler = (index: number) => (event: ChangeEvent&lt;HTMLInputElement>) => void;
+export type AnswerCorrectnessChangeHandler = (index: number) => (event: CheckboxChangeEvent) => void;
+export type DeleteAnswerHandler = (index: number) => () => void;
+export type CreateAnswerHandler = () => void;
+export type SubmitQuestionHandler = () => void;
+
+/**
+ * Component for displaying question creation or edition.
+ * It is smart component which on answer button click will send request on backend
+ *
+ * @component
+ * @example
+ * const answers = [{id: 100, text: 'apple', correct: true}, {id: 200, text: 'banana', correct: false}]
+ * const question = {id: 121, text: 'Which fruit is green?', answers}
+ * const onSuccess = id => console.log("Question was modified")
+ *
+ * return (
+ *   &lt;EditQuestionContainer
+ *      question={question}
+ *      onSuccess={onSuccess}
+ *   />
+ * )
+ */
+export const EditQuestionContainer: React.FC&lt;EditQuestionContainerProps> = ({question, onSuccess}) => {
+    const [questionText, setQuestionText] = useState&lt;string>(question?.text || '');
+    const [answers, setAnswers] = useState&lt;Partial&lt;AnswerModel>[]>(question?.answers || []);
+
+    const createAnswer = useCallback&lt;CreateAnswerHandler>(() => {
+        setAnswers(answers => {
+            return [...answers, {text: '', correct: false}];
+        });
+    }, [setAnswers])
+
+    const submitQuestion = useCallback(() => {
+        if (!questionText || !answers || !answers.length || answers.find(({text}) => !Boolean(text))) {
+            message.error('Not correct data');
+
+            return;
+        }
+
+        if (question?.id) {
+            axios.put(baseUrl(`question`), {text: questionText, answers, id: question.id})
+                .then(function (response: AxiosResponse) {
+                    onSuccess();
+                })
+                .catch(error => message.error(error.message))
+            ;
+        } else {
+            axios.post(baseUrl(`question`), {text: questionText, answers})
+                .then(function (response: AxiosResponse) {
+                    onSuccess();
+                })
+                .catch(error => message.error(error.message))
+            ;
+        }
+    }, [questionText, answers])
+
+    const answerTextChangeHandler = (index: number) =>
+        (event: ChangeEvent&lt;HTMLInputElement>) => {
+            setAnswers(answers => {
+                return answers.map((answer, answerIndex) => {
+                    if (index === answerIndex) {
+                        return {
+                            ...answer,
+                            text: event.target.value
+                        }
+                    }
+
+                    return answer;
+                })
+            })
+        }
+
+    const answerCorrectnessChangeHandler = (index: number) =>
+        (event: CheckboxChangeEvent) => {
+            setAnswers(answers => {
+                return answers.map((answer, answerIndex) => {
+                    if (index === answerIndex) {
+                        return {
+                            ...answer,
+                            correct: event.target.checked,
+                        }
+                    }
+
+                    return answer;
+                })
+            })
+        }
+
+    const deleteAnswer = (index: number) =>
+        () => {
+            setAnswers(answers => {
+                return answers.filter((answer, answerIndex) => index !== answerIndex)
+            })
+        }
+
+    const questionTextChaneHandler = useCallback&lt;QuestionTextChaneHandler>(event => setQuestionText(event.target.value), [setQuestionText]);
+
+    return (
+        &lt;EditQuestion
+            questionText={questionText}
+            onQuestionTextChange={questionTextChaneHandler}
+            answers={answers}
+            onAnswerTextChange={answerTextChangeHandler}
+            onAnswerCorrectnessChange={answerCorrectnessChangeHandler}
+            deleteAnswer={deleteAnswer}
+            createAnswer={createAnswer}
+            submitQuestion={submitQuestion}
+        />
+    )
+}</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="AnswerContainer.html">AnswerContainer</a></li><li><a href="EditQuestionContainer.html">EditQuestionContainer</a></li><li><a href="Main.html">Main</a></li><li><a href="QuestionContainer.html">QuestionContainer</a></li><li><a href="QuestionListContainer.html">QuestionListContainer</a></li><li><a href="QuestionsPageContainer.html">QuestionsPageContainer</a></li></ul><h3>Global</h3><ul><li><a href="global.html#calculateColor">calculateColor</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.6</a> on Mon Dec 14 2020 16:22:56 GMT+0300 (Moscow Standard Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>
