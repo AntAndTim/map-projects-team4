@@ -19,10 +19,13 @@ export const QuestionsPageContainer = () => {
         localStorage.setItem('editMode', String(value));
     }, [editMode, setEditMode])
 
+    const QuizClickHandler = useCallback(() => document.location.href = "/quiz", []);
+
     return (
         <QuestionsPage
             editMode={editMode}
             onEditModeChange={editModeChangeHandler}
+            onQuizClick={QuizClickHandler}
         />
     );
 }

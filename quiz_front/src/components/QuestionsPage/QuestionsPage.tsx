@@ -1,4 +1,4 @@
-import {Switch} from "antd";
+import {Button, Switch} from "antd";
 import {QuestionListContainer} from "../QuestionsList/QuestionList.container";
 import React from "react";
 
@@ -7,12 +7,14 @@ import './QuestionsPage.css'
 interface QuestionsPageProps {
     editMode: boolean;
     onEditModeChange: () => void;
+    onQuizClick: () => void;
 }
 
 export const QuestionsPage: React.FC<QuestionsPageProps> = props => {
     const {
         editMode,
         onEditModeChange,
+        onQuizClick,
     } = props;
 
     return (
@@ -21,7 +23,18 @@ export const QuestionsPage: React.FC<QuestionsPageProps> = props => {
                 Turn on edit mode
                 <Switch checked={editMode} onChange={onEditModeChange}/>
             </div>
-            <QuestionListContainer editMode={editMode}/>
+            {
+                editMode ?
+                    <QuestionListContainer/> :
+                    <Button
+                        type="primary"
+                        className="QuestionsPage-QuizButton"
+                        onClick={onQuizClick}
+                    >
+                        Pass the quiz
+                    </Button>
+            }
+
         </div>
     )
 }

@@ -23,17 +23,16 @@ For coverage view
 
 ### Quiz mode
 
-Questions list with quiz mode
-You can open some question for quiz
+Push the button for quiz start
 
-![questions](./readmeImages/questions.png)
+![questions](./readmeImages/QuizButton.png)
 
 At the beginning you see questioon with answers
 
-![questions](./readmeImages/questionDefault.png)
+![questions](./readmeImages/QuestionWithoutSelectiooons.png)
 
 You should select answers
-![questions](./readmeImages/questionSelected.png)
+![questions](./readmeImages/QuizQuestion1.png)
 
 And click on Answer button, then you see correctness of your answers
 - Red color means that this answer is yours and your answer is incorrect
@@ -46,10 +45,14 @@ And click on Answer button, then you see correctness of your answers
 ### Edit mode
 
 Questions list with edit mode
-You can open some question for edition
+You can open some question for edition or for view
 Also you can create new one
 
-![questions](./readmeImages/questionsWithEditMode.png)
+![questions](./readmeImages/QuestionsList.png)
+
+You can open question for view for checking 
+how it will be seen in quiz
+![questions](./readmeImages/questionDefault.png)
 
 You can create question
 ![questions](./readmeImages/questionCreation.png)

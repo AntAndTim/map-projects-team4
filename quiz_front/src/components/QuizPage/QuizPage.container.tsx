@@ -1,21 +1,10 @@
+import React, {useEffect, useState} from "react";
+import {QuizPage} from "./QuizPage";
+import {QuestionModel} from "../../models/QuestionModel";
 import axios, {AxiosResponse} from "axios";
 import {baseUrl} from "../../config/Config";
-import React, {useEffect, useState} from "react";
 
-import {QuestionModel} from "../../models/QuestionModel";
-import {QuestionsList} from "./QuestionsList";
-
-interface QuestionListContainerProps {}
-
-/**
- * Component for displaying question list with edit or view mode.
- * After edit button or view button you go to the view or edit url
- *
- * @component
- * @example
- * return <QuestionListContainer editMode={false}/>
- */
-export const QuestionListContainer: React.FC<QuestionListContainerProps> = () => {
+export const QuizPageContainer = () => {
     const [questions, setQuestions] = useState<QuestionModel[]>([])
     const [loading, setLoading] = useState<boolean>(false)
 
@@ -30,7 +19,7 @@ export const QuestionListContainer: React.FC<QuestionListContainerProps> = () =>
     }, [])
 
     return (
-        <QuestionsList
+        <QuizPage
             questions={questions}
             loading={loading}
         />
