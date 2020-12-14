@@ -1,0 +1,7 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Mon Dec 07 14:30:56 GMT 2020","Mon Dec 07 14:30:56 GMT 2020","5","","me.tim.team.quiz_back.question.service.QuestionServiceTest","","me.tim.team.quiz_back.question.service.QuestionServiceTest","updateQuestion","updateQuestion()",""
+"passed","Mon Dec 07 14:30:55 GMT 2020","Mon Dec 07 14:30:55 GMT 2020","650","","me.tim.team.quiz_back.question.service.QuestionServiceTest","","me.tim.team.quiz_back.question.service.QuestionServiceTest","getQuestions","getQuestions()",""
+"passed","Mon Dec 07 14:30:56 GMT 2020","Mon Dec 07 14:30:56 GMT 2020","17","","me.tim.team.quiz_back.question.service.QuestionServiceTest","","me.tim.team.quiz_back.question.service.QuestionServiceTest","getQuestionById","getQuestionById()",""
+"passed","Mon Dec 07 14:30:56 GMT 2020","Mon Dec 07 14:30:56 GMT 2020","6","","me.tim.team.quiz_back.question.service.QuestionServiceTest","","me.tim.team.quiz_back.question.service.QuestionServiceTest","deleteQuestion","deleteQuestion()",""
+"passed","Mon Dec 07 14:30:56 GMT 2020","Mon Dec 07 14:30:56 GMT 2020","10","","me.tim.team.quiz_back.question.service.QuestionServiceTest","","me.tim.team.quiz_back.question.service.QuestionServiceTest","createQuestion","createQuestion()",""
+"passed","Mon Dec 07 14:30:56 GMT 2020","Mon Dec 07 14:30:56 GMT 2020","5","","me.tim.team.quiz_back.QuizBackApplicationTests","","me.tim.team.quiz_back.QuizBackApplicationTests","contextLoads","contextLoads()",""
