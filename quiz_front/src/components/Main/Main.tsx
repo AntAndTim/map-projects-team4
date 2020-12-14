@@ -1,8 +1,8 @@
 import React from 'react';
 import {Route, Switch} from 'react-router-dom'
 
-import {QuestionsPage} from "../QuestionsPage/QuestionsPage";
-import {QuestionMode, QuestionPage} from "../QuestionPage";
+import {QuestionsPageContainer} from "../QuestionsPage/QuestionsPage.container";
+import {QuestionMode, QuestionPageContainer} from "../QuestionPage/QuestionPage.container";
 
 type RouteProps = { match: { params: { id: string } } };
 
@@ -10,12 +10,12 @@ export const Main = () => {
     return (
         <main>
             <Switch>
-                <Route exact path='/' component={QuestionsPage}/>
+                <Route exact path='/' component={QuestionsPageContainer}/>
                 <Route
                     exact
                     path='/question/new'
                     component={() => (
-                        <QuestionPage
+                        <QuestionPageContainer
                             mode={QuestionMode.new}
                         />
                     )}
@@ -24,7 +24,7 @@ export const Main = () => {
                     exact
                     path='/question/:id'
                     component={(props: RouteProps) => (
-                        <QuestionPage
+                        <QuestionPageContainer
                             id={Number(props.match.params.id)}
                             mode={QuestionMode.view}
                         />
@@ -34,7 +34,7 @@ export const Main = () => {
                     exact
                     path='/question/:id/edit'
                     component={(props: RouteProps) => (
-                        <QuestionPage
+                        <QuestionPageContainer
                             id={Number(props.match.params.id)}
                             mode={QuestionMode.edit}
                         />

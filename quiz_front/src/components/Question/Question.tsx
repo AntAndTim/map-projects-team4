@@ -1,45 +1,28 @@
-import {QuestionModel} from "../../models/QuestionModel";
-import {Answer} from "../Answer/Answer";
-import React, {useCallback, useState} from "react";
+import {AnswerContainer} from "../Answer/Answer.container";
 import {Button} from "antd";
-
+import React from "react";
+import {QuestionModel} from "../../models/QuestionModel";
 import {AnswerModel} from "../../models/AnswerModel";
-import {calculateColor} from "./Question.utils/Question.utils";
+import {AnswerClickHandler, AnswerQuestion} from "./Question.container";
 
 import './Question.css';
 
 interface QuestionProps {
-    question: QuestionModel
+    question: QuestionModel;
+    answers: AnswerModel[];
+    onAnswerClick: AnswerClickHandler;
+    haveAnswered: boolean;
+    answerQuestion: AnswerQuestion;
 }
 
-export const Question: React.FC<QuestionProps> = ({question}) => {
-    const [answers, setAnswers] = useState<AnswerModel[]>(question.answers || []);
-    const [haveAnswered, setHaveAnswered] = useState(false)
-
-    const onAnswerClick = useCallback((id: number) => {
-        if (haveAnswered) {
-            return;
-        }
-
-        setAnswers(answers => answers.map(answer => {
-            if (id === answer.id) {
-                return {...answer, selected: !answer.selected};
-            }
-
-            return answer;
-        }));
-    }, [setAnswers, haveAnswered]);
-
-    const answerOnQuestion = useCallback(() => {
-        setHaveAnswered(true);
-
-        setAnswers(answers => answers.map(answer => {
-            return {
-                ...answer,
-                color: calculateColor(haveAnswered, answer),
-            }
-        }))
-    }, [setHaveAnswered, setAnswers]);
+export const Question: React.FC<QuestionProps> = props => {
+    const {
+        question,
+        answers,
+        onAnswerClick,
+        haveAnswered,
+        answerQuestion,
+    } = props;
 
     return (
         <div className="Question">
@@ -47,7 +30,7 @@ export const Question: React.FC<QuestionProps> = ({question}) => {
             <div className="Question-Answers">
                 {
                     answers.map(answer => (
-                        <Answer
+                        <AnswerContainer
                             answer={answer}
                             onAnswerClick={onAnswerClick}
                             haveAnswered={haveAnswered}
@@ -57,7 +40,7 @@ export const Question: React.FC<QuestionProps> = ({question}) => {
             </div>
             <Button
                 type="primary"
-                onClick={answerOnQuestion}
+                onClick={answerQuestion}
             >
                 Answer
             </Button>
