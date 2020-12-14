@@ -7,14 +7,12 @@ import './QuestionList.css';
 
 interface QuestionsListProps {
     questions?: QuestionModel[];
-    editMode: boolean;
     loading: boolean;
 }
 
 export const QuestionsList: React.FC<QuestionsListProps> = props => {
     const {
         questions,
-        editMode,
         loading,
     } = props;
 
@@ -36,15 +34,23 @@ export const QuestionsList: React.FC<QuestionsListProps> = props => {
                 renderItem={(item: QuestionModel) => (
                     <List.Item className="QuestionsList-Item">
                         {item.text}
-                        <Link
-                            className="QuestionsList-Button"
-                            to={editMode ? `/question/${item.id}/edit` : `/question/${item.id}`}
-                        >
-                            {editMode ? 'Edit' : 'Open'}
-                        </Link>
+                        <div>
+                            <Link
+                                className="QuestionsList-Button"
+                                to={`/question/${item.id}`}
+                            >
+                                Open
+                            </Link>
+                            <Link
+                                className="QuestionsList-Button"
+                                to={`/question/${item.id}/edit`}
+                            >
+                                Edit
+                            </Link>
+                        </div>
                     </List.Item>)}
             />
-            {editMode && <Link to="/question/new">Create question</Link>}
+            <Link to="/question/new">Create question</Link>
         </>
     )
 }

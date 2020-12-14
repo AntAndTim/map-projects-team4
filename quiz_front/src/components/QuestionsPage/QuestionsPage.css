@@ -8,3 +8,7 @@
 .QuestionsPage-Mode .ant-switch {
     margin-left: 16px;
 }
+
+.ant-btn.QuestionsPage-QuizButton {
+    width: 100%;
+}

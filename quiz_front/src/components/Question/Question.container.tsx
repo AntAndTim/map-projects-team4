@@ -1,12 +1,14 @@
 import {QuestionModel} from "../../models/QuestionModel";
-import React, {useCallback, useState} from "react";
+import React, {useCallback, useEffect, useState} from "react";
 
 import {AnswerModel} from "../../models/AnswerModel";
 import {calculateColor} from "./Question.utils/Question.utils";
 import {Question} from "./Question";
+import {AnswerHandler} from "../Quiz/Quiz.container";
 
 interface QuestionContainerProps {
-    question: QuestionModel
+    question: QuestionModel;
+    onAnswer?: AnswerHandler;
 }
 
 export type AnswerClickHandler = (id: number) => void;
@@ -26,9 +28,20 @@ export type AnswerQuestion = () => void;
  *   />
  * )
  */
-export const QuestionContainer: React.FC<QuestionContainerProps> = ({question}) => {
+export const QuestionContainer: React.FC<QuestionContainerProps> = ({question, onAnswer}) => {
     const [answers, setAnswers] = useState<AnswerModel[]>(question.answers || []);
     const [haveAnswered, setHaveAnswered] = useState(false)
+
+    const resetState = useCallback(() => {
+        setAnswers(question.answers || []);
+        setHaveAnswered(false);
+    }, [setAnswers, question.answers, setHaveAnswered]);
+
+    // If answers are new it means that it is different question
+    // So we need reset state
+    useEffect(() => {
+        resetState();
+    }, [question.answers])
 
     const answerClickHandler = useCallback<AnswerClickHandler>((id: number) => {
         if (haveAnswered) {
@@ -46,13 +59,19 @@ export const QuestionContainer: React.FC<QuestionContainerProps> = ({question}) 
     const answerQuestion = useCallback<AnswerQuestion>(() => {
         setHaveAnswered(true);
 
-        setAnswers(answers => answers.map(answer => {
-            return {
-                ...answer,
-                color: calculateColor(haveAnswered, answer),
-            }
-        }))
-    }, [setHaveAnswered, setAnswers]);
+        setAnswers(answers => {
+            const newAnswers =  answers.map(answer => {
+                return {
+                    ...answer,
+                    color: calculateColor(haveAnswered, answer),
+                }
+            })
+
+            onAnswer?.(newAnswers);
+
+            return newAnswers;
+        })
+    }, [setHaveAnswered, setAnswers, answers]);
 
     return (
         <Question
