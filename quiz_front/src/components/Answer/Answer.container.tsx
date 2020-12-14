@@ -8,6 +8,22 @@ interface AnswerContainerProps {
     haveAnswered: boolean;
 }
 
+/**
+ * Component for answer display in quiz mode
+ *
+ * @component
+ * @example
+ * const answer = {id: 100, text: 'apple', correct: true}
+ * const onAnswerClick = id => console.log(`Question${id} selected`)
+ *
+ * return (
+ *   <AnswerContainer
+ *      answer={text}
+ *      onAnswerClick={onAnswerClick}
+ *      haveAnswered={false}
+ *   />
+ * )
+ */
 export const AnswerContainer: React.FC<AnswerContainerProps> = ({
   answer,
   onAnswerClick,
