@@ -1,0 +1,95 @@
+{
+  "uid" : "e92608111e4f36aa",
+  "name" : "contextLoads()",
+  "fullName" : "me.tim.team.quiz_back.QuizBackApplicationTests.contextLoads",
+  "historyId" : "3c1f22a6c062e531e251516b0704bacc",
+  "time" : {
+    "start" : 1607351456073,
+    "stop" : 1607351456078,
+    "duration" : 5
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "hqmsksbldb02.tcsbank.ru"
+  }, {
+    "name" : "thread",
+    "value" : "61561@hqmsksbldb02.tcsbank.ru.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "me.tim.team.quiz_back.QuizBackApplicationTests"
+  }, {
+    "name" : "testClass",
+    "value" : "me.tim.team.quiz_back.QuizBackApplicationTests"
+  }, {
+    "name" : "testMethod",
+    "value" : "contextLoads"
+  }, {
+    "name" : "suite",
+    "value" : "me.tim.team.quiz_back.QuizBackApplicationTests"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 4,
+        "unknown" : 0,
+        "total" : 4
+      },
+      "items" : [ {
+        "uid" : "722bdf516aff28af",
+        "reportUrl" : "https://AntAndTim.github.io/map-projects-team4/13//#testresult/722bdf516aff28af",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607351456073,
+          "stop" : 1607351456078,
+          "duration" : 5
+        }
+      }, {
+        "uid" : "50ea77fc3b316943",
+        "reportUrl" : "https://AntAndTim.github.io/map-projects-team4/12//#testresult/50ea77fc3b316943",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607351456073,
+          "stop" : 1607351456078,
+          "duration" : 5
+        }
+      }, {
+        "uid" : "1bf297db9bcf19a1",
+        "reportUrl" : "https://AntAndTim.github.io/map-projects-team4/11//#testresult/1bf297db9bcf19a1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607351456073,
+          "stop" : 1607351456078,
+          "duration" : 5
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "e92608111e4f36aa.json",
+  "parameterValues" : [ ]
+}
