@@ -8,7 +8,7 @@ function App() {
     return (
         <div>
             <PageHeader
-                className="site-page-header"
+                className="App-Header"
                 title="Quiz TeamTim"
                 subTitle="Here you can find questions for the quiz"
                 onBack={() => document.location.href = '/'}

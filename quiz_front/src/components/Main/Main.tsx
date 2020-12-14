@@ -1,5 +1,5 @@
 import React from 'react';
-import {Route, Switch} from 'react-router-dom'
+import {Router, Route, Switch} from 'react-router-dom'
 
 import {QuestionsPageContainer} from "../QuestionsPage/QuestionsPage.container";
 import {QuestionMode, QuestionPageContainer} from "../QuestionPage/QuestionPage.container";

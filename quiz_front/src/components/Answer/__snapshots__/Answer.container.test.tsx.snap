@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AnswerContainer Should render component 1`] = `
+<div
+  class="ant-card ant-card-bordered ant-card-hoverable Answer"
+>
+  <div
+    class="ant-card-body"
+  >
+    AnswerText
+  </div>
+</div>
+`;
