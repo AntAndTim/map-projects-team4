@@ -5,14 +5,14 @@ import {AnswerModel} from "../../models/AnswerModel";
 import {calculateColor} from "./Question.utils/Question.utils";
 import {Question} from "./Question";
 
-interface QuestionProps {
+interface QuestionContainerProps {
     question: QuestionModel
 }
 
 export type AnswerClickHandler = (id: number) => void;
 export type AnswerQuestion = () => void;
 
-export const QuestionContainer: React.FC<QuestionProps> = ({question}) => {
+export const QuestionContainer: React.FC<QuestionContainerProps> = ({question}) => {
     const [answers, setAnswers] = useState<AnswerModel[]>(question.answers || []);
     const [haveAnswered, setHaveAnswered] = useState(false)
 

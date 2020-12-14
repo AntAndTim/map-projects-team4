@@ -2,13 +2,13 @@ import React, {useCallback} from "react";
 import {AnswerModel} from "../../models/AnswerModel";
 import {Answer} from "./Answer";
 
-interface AnswerProps {
+interface AnswerContainerProps {
     answer: AnswerModel;
     onAnswerClick: (id: number) => void;
     haveAnswered: boolean;
 }
 
-export const AnswerContainer: React.FC<AnswerProps> = ({
+export const AnswerContainer: React.FC<AnswerContainerProps> = ({
   answer,
   onAnswerClick,
   haveAnswered,

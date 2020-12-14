@@ -5,11 +5,11 @@ import React, {useEffect, useState} from "react";
 import {QuestionModel} from "../../models/QuestionModel";
 import {QuestionsList} from "./QuestionsList";
 
-interface QuestionListProps {
+interface QuestionListContainerProps {
     editMode: boolean;
 }
 
-export const QuestionListContainer: React.FC<QuestionListProps> = ({editMode}) => {
+export const QuestionListContainer: React.FC<QuestionListContainerProps> = ({editMode}) => {
     const [questions, setQuestions] = useState<QuestionModel[]>([])
     const [loading, setLoading] = useState<boolean>(false)
 
