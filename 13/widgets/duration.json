@@ -1,0 +1,61 @@
+[ {
+  "uid" : "c7387f6556271937",
+  "name" : "deleteQuestion()",
+  "time" : {
+    "start" : 1607351456028,
+    "stop" : 1607351456034,
+    "duration" : 6
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e9c9820a74e58f05",
+  "name" : "getQuestionById()",
+  "time" : {
+    "start" : 1607351456038,
+    "stop" : 1607351456055,
+    "duration" : 17
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "258d15f335de785",
+  "name" : "updateQuestion()",
+  "time" : {
+    "start" : 1607351456006,
+    "stop" : 1607351456011,
+    "duration" : 5
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "90fa357b59f8cac5",
+  "name" : "createQuestion()",
+  "time" : {
+    "start" : 1607351456015,
+    "stop" : 1607351456025,
+    "duration" : 10
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "903bab768b9e0602",
+  "name" : "getQuestions()",
+  "time" : {
+    "start" : 1607351455290,
+    "stop" : 1607351455940,
+    "duration" : 650
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "722bdf516aff28af",
+  "name" : "contextLoads()",
+  "time" : {
+    "start" : 1607351456073,
+    "stop" : 1607351456078,
+    "duration" : 5
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
